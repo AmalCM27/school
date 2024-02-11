@@ -1614,7 +1614,7 @@ img:not([src]) {
 
 .t396 .tn-atom__img {
   width: 100%;
-  display: block
+  margin-top: 1px;
 }
 
 .t396 .tn-atom__html {
