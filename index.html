@@ -25,6 +25,7 @@
   <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="stylesheet" href="css/select.css">
   <link rel="apple-touch-icon" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="apple-touch-startup-image" href="">
   <meta name="msapplication-TileColor" content="#000000">
@@ -311,7 +312,8 @@ var alr=document.querySelectorAll('.t-records');
                   <li class="t228__list_item" style="padding:0 15px;"><a class="t-menu__link-item"
                       href="#submenu:morevzroslie" data-menu-submenu-hook="" data-menu-item-number="5">Секции</a></li>
                   <li class="t228__list_item" style="padding:0 15px;"><a class="t-menu__link-item"
-                      href="#submenu:moreprepodavateli" data-menu-submenu-hook="" data-menu-item-number="6">Курсы</a></li>
+                      href="#submenu:moreprepodavateli" data-menu-submenu-hook="" data-menu-item-number="6">Курсы</a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -328,10 +330,11 @@ var alr=document.querySelectorAll('.t-records');
                             d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z"
                             fill="#ff9100"></path>
                         </svg></a></li>
-                    <li class="t-sociallinks__item t-sociallinks__item_telegram"><a href="vk" target="_blank"
-                        rel="nofollow" aria-label="vk" style="width: 30px; height: 30px;"><svg
-                          class="t-sociallinks__svg" role="presentation" width="30px" height="30px"
-                          viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="t-sociallinks__item t-sociallinks__item_telegram"><a
+                        href="https://vk.com/clarklymitten27" target="_blank" rel="nofollow" aria-label="vk"
+                        style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation"
+                          width="30px" height="30px" viewBox="0 0 100 100" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z"
                             fill="#ff9100"></path>
@@ -356,7 +359,22 @@ var alr=document.querySelectorAll('.t-records');
                 </div>
                 <div class="t228__right_langs">
                   <div class="t228__right_buttons_wrap">
-                    <div class="t228__right_langs_lang"><a style="" href="english.html">EN</a></div>
+                    <form>
+                      <div class="__select" data-state="">
+                        <div class="__select__title" data-default="Option 0">Язык</div>
+                        <div class="__select__content">
+                          <input  id="singleSelect0" class="__select__input" type="radio" name="singleSelect" />
+                          <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                          <label for="singleSelect1" class="__select__label">zero</label>
+                          <input data-success-url="http://127.0.0.1:5500/spisok.html" id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                          <label   for="singleSelect2" class="__select__label">KG</label>
+                          <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                          <label for="singleSelect3" class="__select__label">RU</label>
+                          <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                          <label for="singleSelect4" class="__select__label">EN</label>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -569,22 +587,24 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', en
               <ul class="t794__list" role="menu" aria-label="">
                 <li class="t794__list_item t-submenublocks__item t-name t-name_xs"><a
                     class="t794__typo t794__typo_212337424 t794__link t-name t-name_xs" role="menuitem"
-                    href="https://lalafo.kg/kyrgyzstan/vakansii/q-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC-%D0%B2-%D1%88%D0%BA%D0%BE%D0%BB%D0%B5"  target="_blank" style="font-size:14px;" data-menu-item-number="1">В школе</a>
+                    href="https://lalafo.kg/kyrgyzstan/vakansii/q-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC-%D0%B2-%D1%88%D0%BA%D0%BE%D0%BB%D0%B5"
+                    target="_blank" style="font-size:14px;" data-menu-item-number="1">В школе</a>
                 </li>
                 <li class="t794__list_item t-submenublocks__item t-name t-name_xs"><a
-                    class="t794__typo t794__typo_212337424 t794__link t-name t-name_xs" role="menuitem" href="https://www.instagram.com/jarnama_karakol/p/C1zFV04s2st/"  target="_blank"
+                    class="t794__typo t794__typo_212337424 t794__link t-name t-name_xs" role="menuitem"
+                    href="https://www.instagram.com/jarnama_karakol/p/C1zFV04s2st/" target="_blank"
                     style="font-size:14px;" data-menu-item-number="2">В Детсаде</a>
                 </li>
                 <li class="t794__list_item t-submenublocks__item t-name t-name_xs"><a
-                    class="t794__typo t794__typo_212337424 t794__link t-name t-name_xs" role="menuitem" href="#"  target="_blank"
-                    style="font-size:14px;" data-menu-item-number="3">В гимназии</a></li>
+                    class="t794__typo t794__typo_212337424 t794__link t-name t-name_xs" role="menuitem" href="#"
+                    target="_blank" style="font-size:14px;" data-menu-item-number="3">В гимназии</a></li>
                 <li class="t794__list_item t-submenublocks__item t-name t-name_xs"><a
-                    class="t794__typo t794__typo_212337424 t794__link t-name t-name_xs" role="menuitem" href="#"  target="_blank"
-                    style="font-size:14px;" data-menu-item-number="4">В лицее</a>
+                    class="t794__typo t794__typo_212337424 t794__link t-name t-name_xs" role="menuitem" href="#"
+                    target="_blank" style="font-size:14px;" data-menu-item-number="4">В лицее</a>
                 </li>
                 <li class="t794__list_item t-submenublocks__item t-name t-name_xs"><a
-                    class="t794__typo t794__typo_212337424 t794__link t-name t-name_xs" role="menuitem" href="#"  target="_blank"
-                    style="font-size:14px;" data-menu-item-number="5">Курсы</a></li>
+                    class="t794__typo t794__typo_212337424 t794__link t-name t-name_xs" role="menuitem" href="#"
+                    target="_blank" style="font-size:14px;" data-menu-item-number="5">Курсы</a></li>
               </ul>
             </div>
           </div>
@@ -761,7 +781,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', en
         </style>
         <style></style>
       </div>
-      
+
       <div id="rec552038223" class="r t-rec" style=" " data-animationappear="off" data-record-type="794"><!-- T794 -->
         <div class="t794" data-tooltip-hook="#submenu:moreprepodavateli" data-tooltip-margin="10px" data-add-arrow="on">
           <div class="t794__tooltip-menu">
@@ -790,7 +810,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', en
                 <li class="t794__list_item t-submenublocks__item t-name t-name_xs"><a
                     class="t794__typo t794__typo_552038223 t794__link t-name t-name_xs" role="menuitem"
                     href="#gift-certificate" style="" data-menu-item-number="7">Исскуство</a></li>
-                    <li class="t794__list_item t-submenublocks__item t-name t-name_xs"><a
+                <li class="t794__list_item t-submenublocks__item t-name t-name_xs"><a
                     class="t794__typo t794__typo_552038223 t794__link t-name t-name_xs" role="menuitem"
                     href="#gift-certificate" style="" data-menu-item-number="">Фин.грам.</a></li>
               </ul>
@@ -1645,10 +1665,10 @@ if (!burger.closest('.tmenu-mobile') &&
               <div class="t451m__rightcontainer">
                 <div class="t-sociallinks">
                   <ul role="list" class="t-sociallinks__wrapper" aria-label="Соц. сети"><!-- new soclinks -->
-                    <li class="t-sociallinks__item t-sociallinks__item_vk"><a href="vk" target="_blank" rel="nofollow"
-                        aria-label="vk" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg"
-                          role="presentation" width="30px" height="30px" viewBox="0 0 100 100" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
+                    <li class="t-sociallinks__item t-sociallinks__item_vk"><a href="https://vk.com/clarklymitten27"
+                        target="_blank" rel="nofollow" aria-label="vk" style="width: 30px; height: 30px;"><svg
+                          class="t-sociallinks__svg" role="presentation" width="30px" height="30px"
+                          viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z"
                             fill="#000000"></path>
@@ -2390,7 +2410,102 @@ if (window.isMobile) {
                     </div>
                   </div>
                 </div>
-               
+
+
+                <div class="t-slds__item" data-slide-index="5" role="group" aria-roledescription="slide"
+                  aria-hidden="true" aria-label="6 из 29">
+                  <div class="t734__slds-wrapper t-slds__wrapper">
+                    <div class="t-cover" style="height:100vh;">
+                      <div class="t-cover__carrier"
+                        data-content-cover-bg="https://novosti.kg/wp-content/uploads/2020/08/kosichkav.jpg"
+                        style="background-image: url('images/20230221_winter_scho.JPG'); height:100vh;" itemscope=""
+                        itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="image" content="https://novosti.kg/wp-content/uploads/2020/08/kosichkav.jpg">
+                      </div>
+                      <div class="t-cover__filter"
+                        style="height:100vh; background-image: -moz-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.50));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.50));background-image: -o-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.50));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.50));background-image: linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.50));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b2000000', endColorstr='#7f000000'); ">
+                      </div>
+                    </div>
+                    <div class="t734__table">
+                      <div class="t-cell t-valign_middle">
+                        <div class="t-container">
+                          <div class="t-cover__wrapper t-valign_middle">
+                            <div class="t734__wrapper t-width t-width_8 t-margin_auto" data-hook-content="covercontent">
+                              <div class="t734__textwrapper t-align_center">
+                                <div class="t734__title t-title t-title_sm" field="li_title__1694164603596">
+                                  С 8 апреля начнется электронная запись первоклассников в школы</div>
+                                <div class="t734__descr t-descr t-descr_md" field="li_descr__1694164603596"> </div>
+                                <div class="t734__button"><a
+                                    href="https://novosti.kg/2024/03/s-8-aprelya-nachnetsya-elektronnaya-zapis-pervoklassnikov-v-shkoly/"
+                                    target="" class="t-btn t-btn_md"
+                                    style="color:#ffffff;background-color:#ff9100;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;"
+                                    data-buttonfieldset="li_button" data-lid="1694164603596">
+                                    <table role="presentation" style="width:100%; height:100%;">
+                                      <tbody>
+                                        <tr>
+                                          <td data-field="li_buttontitle">Подробнее</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="t-slds__item" data-slide-index="5" role="group" aria-roledescription="slide"
+                  aria-hidden="true" aria-label="6 из 29">
+                  <div class="t734__slds-wrapper t-slds__wrapper">
+                    <div class="t-cover" style="height:100vh;">
+                      <div class="t-cover__carrier"
+                        data-content-cover-bg="https://sputnik.kg/img/07e8/03/1d/1083828992_0:0:1920:1080_1920x0_80_0_0_8945ae263ad96dcb10ae1aff2f15cddc.jpg.webp"
+                        style="background-image: url('images/20230221_winter_scho.JPG'); height:100vh;" itemscope=""
+                        itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="image"
+                          content="https://sputnik.kg/img/07e8/03/1d/1083828992_0:0:1920:1080_1920x0_80_0_0_8945ae263ad96dcb10ae1aff2f15cddc.jpg.webp">
+                      </div>
+                      <div class="t-cover__filter"
+                        style="height:100vh; background-image: -moz-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.50));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.50));background-image: -o-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.50));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.50));background-image: linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.50));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b2000000', endColorstr='#7f000000'); ">
+                      </div>
+                    </div>
+                    <div class="t734__table">
+                      <div class="t-cell t-valign_middle">
+                        <div class="t-container">
+                          <div class="t-cover__wrapper t-valign_middle">
+                            <div class="t734__wrapper t-width t-width_8 t-margin_auto" data-hook-content="covercontent">
+                              <div class="t734__textwrapper t-align_center">
+                                <div class="t734__title t-title t-title_sm" field="li_title__1694164603596">
+                                  Слабые школы будем "передавать" сильным — министр о реформе образования в КР</div>
+                                <div class="t734__descr t-descr t-descr_md" field="li_descr__1694164603596"></div>
+                                <div class="t734__button"><a
+                                    href="https://ru.sputnik.kg/20240329/obrazovaniye-12-let-shkoly-kyrgyzstan-1083828069.html"
+                                    target="" class="t-btn t-btn_md"
+                                    style="color:#ffffff;background-color:#ff9100;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;"
+                                    data-buttonfieldset="li_button" data-lid="1694164603596">
+                                    <table role="presentation" style="width:100%; height:100%;">
+                                      <tbody>
+                                        <tr>
+                                          <td data-field="li_buttontitle">Подробнее</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
 
                 <div class="t-slds__item" data-slide-index="5" role="group" aria-roledescription="slide"
                   aria-hidden="true" aria-label="6 из 29">
@@ -2438,8 +2553,13 @@ if (window.isMobile) {
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
+
+
+
+
                 <div class="t-slds__item" data-slide-index="6" role="group" aria-roledescription="slide"
                   aria-hidden="true" aria-label="10 из 29">
                   <div class="t734__slds-wrapper t-slds__wrapper">
@@ -6902,8 +7022,8 @@ if (window.isMobile) {
               data-field-axisx-res-480-value="left" data-field-container-res-480-value="window"
               data-field-top-res-640-value="1205" data-field-left-res-640-value="235"
               data-field-axisx-res-640-value="center" data-field-top-res-960-value="1003"
-              data-field-left-res-960-value="70"><a class="tn-atom" href="vk" target="_blank"><img
-                  class="tn-atom__img t-img"
+              data-field-left-res-960-value="70"><a class="tn-atom" href="https://vk.com/clarklymitten27"
+                target="_blank"><img class="tn-atom__img t-img"
                   data-original="https://static.tildacdn.com/tild3865-6436-4335-a436-396462666436/Vk.svg" alt=""
                   imgfield="tn_img_1567021389276"></a></div>
             <div class="t396__elem tn-elem tn-elem__2155146771581602124767" data-elem-id="1581602124767"
@@ -7261,6 +7381,7 @@ if (window.isMobile) {
 }, 2000); </script><!-- Google Tag Manager (noscript) --><noscript><iframe
       src="https://www.googletagmanager.com/ns.html?id=GTM-WZRVHFM" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
+  <script type="module" src="js/selects.js"></script>
 </body>
 
 </html>
